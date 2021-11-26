@@ -1,0 +1,243 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif;
+     box-sizing: border-box;
+    outline: none;
+}
+body{
+    background-color:#f2f2f2;
+    background-color:black;    
+}
+
+
+
+/*nav section*/
+nav {
+    background-color:black;
+    padding: 10px 20px 10px 50px;
+    top: 0px;
+    position: sticky;   
+}
+
+nav ul {
+   display: flex;
+   list-style: none;
+    flex-wrap: wrap;
+   align-items: center;
+    justify-content: center;
+}
+
+
+nav ul li.logo{
+    flex:1;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    
+}
+
+nav ul div.item{
+    padding: 0 25px;
+    display:flex;
+}
+
+nav ul div.item a{
+    text-decoration: none;
+    font-size: 19px;
+    padding: 0 12px;
+    color: white;
+}
+
+
+nav ul div.item a:hover{
+    color:lightseagreen;
+}
+nav ul .search-icon{
+    height: 40px;
+    width: 210px;
+    display: flex;
+    background:red;
+    border-radius: 5px;
+}
+
+
+nav ul .search-icon input{
+    height: 100%;
+    width: 100%;
+    background:none;
+    border: 1px solid tomato;
+    outline: none;
+    padding: 0 10px;
+    color: #fff;
+    font-size: 16px;
+   border-radius: 5px 0 0 5px;    
+}
+
+nav ul .search-icon .search{
+    background: black;
+}
+
+nav ul .search-icon .icon{
+    height: 100%;
+    width: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 0 5px 5px 0;    
+    cursor: pointer;
+}
+
+nav ul .search-icon .icon:hover{
+    background:lightsalmon;
+}
+
+nav ul .search-icon .icon span{
+    color: white;
+    font-size: 15px;
+}
+
+nav .btncheck{
+     color: #fff;
+     font-size: 23px;
+     justify-content: center;
+     cursor: pointer;
+     margin: 2px;
+     float: right;
+     display: none;
+    }
+
+nav  #check{
+    display: none;
+    float: right;
+}
+
+/*home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 600px;
+     justify-content: center;
+    align-items: center;   
+    background: url('../img/nature.jpg')no-repeat center center/cover;    
+    animation: imgsilder 5s infinite linear;
+}
+
+@keyframes imgsilder{
+
+    0%{
+        background-image: url('https://i.picsum.photos/id/104/3840/2160.jpg?hmac=Rv0qxBiYb65Htow4mdeDlyT5kLM23Z2cDlN53YYldZU');
+    }
+      25%{
+        background-image: url('https://i.picsum.photos/id/1079/4496/3000.jpg?hmac=G-dJcpU08vEMqjUz2rb3IxjOG99rcePqW9BF1IsPLf0');
+      }
+      50%{
+        background-image: url('https://i.picsum.photos/id/1069/3500/2333.jpg?hmac=VBJ1vR2opkcKLS9NKGDl5uPxF02u6dSqbwc1x1b4oJc');
+      }
+      
+}
+
+
+#home h1{
+    color: white;
+    text-align: center;
+}
+
+.primary{
+    font-size:3.8rem;
+   padding: 5px;
+ }
+
+#home p{
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+
+.btn{
+    padding: 10px 40px;
+    border: 1px solid lightseagreen;
+    background-color:rgb(8, 168, 160);
+    color: rgb(73, 64, 64);
+    margin: 5px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+ section .btn:hover{
+     border:1px solid red;
+      background-color: red;
+}
+
+
+
+
+/*Services section*/
+#package{
+    margin:15px;
+    display: flex;
+}
+
+
+#package .box{
+    /*border: 2px solid red;*/
+    box-shadow: 5px 8px 23px sandybrown;
+    background-color: burlywood;
+    
+     margin: 10px;
+   padding: 1px 13px;
+}
+
+
+#package .box img{
+    height: 200px;
+    margin: 10px 10px;
+    display: block;
+}
+
+
+.primary1{
+    margin: 45px;
+    font-size:2.3rem;
+   padding: 2px;
+   color: white;
+}
+
+.primary1 span{
+       font-size:2 rem;
+       background-color: seagreen;
+       color: sandybrown;
+        padding: 3px 12px;
+
+}
+
+.secondary{
+    font-size:2rem;
+      font-weight: 200;  
+}
+
+
+ .para{
+    font-size: 1.5rem;
+    padding: 1px;
+    color: white;
+    text-align: justify;
+}
+
+.center{
+    text-align: center;
+}
+
+
+
+ 
+
+
+
+
+
+
